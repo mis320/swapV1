@@ -1,0 +1,379 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amountOutMin",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[][]",
+				"name": "paths",
+				"type": "address[][]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minPoolETH",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minPoolUSDTOrOther",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "gan_si_gou_zhuang_buy",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "sellNum",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[][]",
+				"name": "paths",
+				"type": "address[][]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minsellETH",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "gan_si_gou_zhuang_sell",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "v",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[]",
+				"name": "path",
+				"type": "address[]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getAmountsOutCall",
+		"outputs": [
+			{
+				"internalType": "uint256[]",
+				"name": "amounts",
+				"type": "uint256[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "token0",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "getPair",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "WETHPari",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "USDTPari",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "BUSDTPari",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "platformTokenPari",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256[4]",
+				"name": "pool",
+				"type": "uint256[4]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "v",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address[][]",
+				"name": "paths",
+				"type": "address[][]"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "indexs",
+				"type": "uint256[]"
+			}
+		],
+		"name": "getPathAmountS",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "amounts",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "MAXNUM",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "o",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "a",
+				"type": "address"
+			}
+		],
+		"name": "initialize_router_R",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "lpReplace",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "tokenA",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "tokenB",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			}
+		],
+		"name": "pairFor",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "pair",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address[][]",
+				"name": "paths",
+				"type": "address[][]"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minPoolETH",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "minPoolUSDTOrOther",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellRatio",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isPX",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "issell",
+				"type": "bool"
+			}
+		],
+		"name": "safe_gan_si_gou_zhuang_buy",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "f",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sk",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "u",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "b",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "w_",
+				"type": "address"
+			}
+		],
+		"name": "set",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "index",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "factory",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "WETH_",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "platformToken",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "K1",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "initCodeHash",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "string",
+				"name": "swapName",
+				"type": "string"
+			}
+		],
+		"name": "setInfo",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "srcLp",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "TargetLp",
+				"type": "address"
+			}
+		],
+		"name": "setLPRep",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+	
+]
